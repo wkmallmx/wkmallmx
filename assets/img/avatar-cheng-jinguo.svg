@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Avatar Cheng Jinguo">
+  <circle cx="64" cy="64" r="60" fill="#f2f5fa" stroke="#dbe3f0"/>
+  <rect x="32" y="76" width="64" height="32" rx="14" fill="#ffffff" stroke="#dbe3f0"/>
+  <circle cx="56" cy="52" r="6" fill="#334052"/>
+  <circle cx="74" cy="52" r="6" fill="#334052"/>
+  <path d="M52 66c12 6 24 6 24 0" stroke="#334052" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

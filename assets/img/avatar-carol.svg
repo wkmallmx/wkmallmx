@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Avatar Carol">
+  <circle cx="64" cy="64" r="60" fill="#121827" stroke="#23314a"/>
+  <rect x="32" y="78" width="64" height="34" rx="14" fill="#141b2a" stroke="#23314a"/>
+  <circle cx="54" cy="54" r="6" fill="#e7ecf3"/>
+  <circle cx="76" cy="54" r="6" fill="#e7ecf3"/>
+  <path d="M52 68c12 8 24 8 24 0" stroke="#e7ecf3" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

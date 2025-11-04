@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Redirects — Prof. Avery Kim</title>
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+  </head>
+  <body>
+    <main class="section">
+      <div class="container flow">
+        <h1>Redirecting…</h1>
+        <p>If you are not redirected automatically, choose from the list below.</p>
+
+        <div id="fallback" class="grid students"></div>
+        <p><a class="btn" href="students.html">Back to Students</a></p>
+      </div>
+    </main>
+
+    <script>
+      const mapping = {
+        'wang-lei': '#',
+        'yuan-xinyun': '#',
+        'cheng-jinguo': '#',
+        'cai-wanlin': '#',
+        'zhang-zhongyue': '#',
+        'sun-changbin': '#',
+        'liu-yangyou': '#',
+        'xu-lin': '#',
+        'liu-yiwei': '#',
+        'wu-kunming': '#',
+        'zhang-chenhui': '#',
+        'tang-jinfan': '#',
+        'zhang-yuxuan': '#',
+        'liu-jia': '#'
+      };
+
+      // Populate fallback list
+      const fallback = document.getElementById('fallback');
+      const entries = Object.entries(mapping);
+      for (const [slug, url] of entries) {
+        const a = document.createElement('a');
+        a.className = 'student-card';
+        a.href = url;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+        a.innerHTML = `<div><h3>${slug.replace(/-/g, ' ')}</h3><p class="meta">Open personal homepage</p></div>`;
+        fallback.appendChild(a);
+      }
+
+      // Attempt redirect
+      const params = new URLSearchParams(location.search);
+      const to = params.get('to');
+      if (to && mapping[to]) {
+        location.replace(mapping[to]);
+      }
+    </script>
+  </body>
+  </html>
